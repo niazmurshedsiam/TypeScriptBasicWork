@@ -1,12 +1,9 @@
 class Players{
-    private name:string;
-    readonly age:number;
-    country:string
-    constructor(name:string,age:number,country:string){
-        this.name = name;
-        this.age = age;
-        this.country = country
-    }
+    constructor(
+        private name:string,
+        readonly age:number,
+        public country:string
+    ){}
     play(){
         console.log(`${this.name} from ${this.country} is playing.`);
     }
