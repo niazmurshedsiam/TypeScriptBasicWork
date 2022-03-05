@@ -1,32 +1,17 @@
-export class Players{
+import {IsPlayers} from '../interfaces/IsPlayers.js';
+export class Players implements IsPlayers{
     constructor(
-        private name:string,
-        readonly age:number,
-        public country:string
+        public name:string,
+        private age:number,
+        readonly country:string
     ){}
+    getProperty(){
+        return this.age;
+    }
     play(){
         console.log(`${this.name} from ${this.country} is playing.`);
     }
 
 }
-////////Object/////// 
-interface RectenangleOption{
-    width: number,
-    length: number
-}
-function Rectenagle(option:RectenangleOption){
- let width = option.width;
- let length = option.length;
-}
-let RectenagleR={
-    width:30,
-    length:40,
-    height:30
 
-}
-
-Rectenagle(RectenagleR);
-
-
-///classes///
 

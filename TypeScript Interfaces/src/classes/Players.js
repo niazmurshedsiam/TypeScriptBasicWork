@@ -4,18 +4,10 @@ export class Players {
         this.age = age;
         this.country = country;
     }
+    getProperty() {
+        return this.age;
+    }
     play() {
         console.log(`${this.name} from ${this.country} is playing.`);
     }
 }
-function Rectenagle(option) {
-    let width = option.width;
-    let length = option.length;
-}
-let RectenagleR = {
-    width: 30,
-    length: 40,
-    height: 30
-};
-Rectenagle(RectenagleR);
-///classes///
